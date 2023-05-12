@@ -1,0 +1,62 @@
+body {
+  background-color: #e5e5e5;
+}
+
+.row {
+  margin: -4px;
+}
+
+[class*="col-"] {
+  padding: 4px;
+}
+
+@media screen and (min-width: 1201px) {
+  .responsive-bg {
+    background-image: var(--xl-size);
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .responsive-bg {
+    background-image: var(--xl-size);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .responsive-bg {
+    background-image: var(--l-size);
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .responsive-bg {
+    background-image: var(--m-size);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .responsive-bg {
+    background-image: var(--s-size);
+  }
+
+  .double-item-container-text {
+    justify-content: flex-end;
+    width: unset;
+  }
+  .plans-item-wrapper {
+    height: 520px;
+  }
+
+  .text-box-plans {
+    /* display: flex !important; */
+    /* flex-direction: column !important; */
+    align-items: center !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .responsive-bg {
+    background-image: var(--xs-size);
+  }
+}
