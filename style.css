@@ -26,6 +26,36 @@ body {
   display: flex;
 }
 
+.double-item-container-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  align-content: stretch;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+._btn {
+  color: #fff;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px #fff;
+  display: inline-block;
+  padding: 14px 40px 12px;
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  font-family: FS Alvar;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 110%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 @media screen and (min-width: 1201px) {
   .double-item-container {
     height: 602px;
@@ -36,6 +66,11 @@ body {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
+  .double-item-container-text {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
   .double-item-container {
     height: 576px;
   }
@@ -45,6 +80,14 @@ body {
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  .double-item-container-text {
+    gap: 6px;
+    padding-top: 24px;
+    height: unset;
+    width: unset;
+    justify-content: flex-end;
+  }
+
   .double-item-container {
     height: 620px;
   }
@@ -54,6 +97,12 @@ body {
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+  .double-item-container-text {
+    gap: 6px;
+    justify-content: flex-end;
+    width: unset;
+  }
+
   .double-item-container {
     height: 685px;
   }
@@ -63,6 +112,11 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .double-item-container-text {
+    justify-content: flex-end;
+    width: unset;
+  }
+
   .double-item-container {
     height: 695px;
   }
