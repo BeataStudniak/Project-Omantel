@@ -3,18 +3,275 @@ body {
 }
 
 .row {
+  /* gap: 8px 0px; */
   margin: -4px;
 }
 
 [class*="col-"] {
   padding: 4px;
+  /* margin-bottom: 8px; */
 }
 
-.responsive-bg {
+/* .row img {
+  width: 100%;
+  height: auto;
+} */
+
+/* @media (min-width: 992px) {
+  .row .col-lg-6 {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    overflow: hidden;
+    /* padding-left: 15px;
+    padding-right: 15px; 
+  }
+} */
+
+.czarneTlo {
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 312px;
+  top: 0;
+}
+
+.box1 {
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-box1 {
+  /* border: 2px solid blue; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.box3 {
+  /* szerokosc zawsze zdefiniowac w boxach, po col */
+  width: 100%;
+  /* wysokosc nadpiwysac w parencie */
+  height: 536px;
+  /* overflow lepiej dac  */
+  overflow: hidden;
+  /* display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
+  /* margin-right: 4px; */
+}
+
+.boxImgTlemLewy {
+  background: url(img/OTaxi_Banner_XL_+fullphoto_center_+1110x700_EA.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  height: 536px;
+}
+
+.boxImgTlemPrawy {
+  background-color: #fbfbfb;
+  background-image: url(img/Jawazak+XL.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 536px;
+}
+
+.text-box3 {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 20px;
+  max-width: 61%;
+}
+
+.img-box3 {
+  /* border: 2px solid aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 16px;
+  position: relative;
+}
+
+.img-fluid {
+  max-width: 360px;
+  height: auto;
+}
+
+h2 {
+  font-family: FS Alvar;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+h5 {
+  font-family: FS Alvar;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+
+h6 {
+  font-size: 17px;
+  font-weight: normal;
+  font-family: "FSAlbert";
+}
+
+.btn {
+  box-shadow: inset 0 0 0 2px #fff;
+  background-color: transparent;
+  display: inline-block;
+  padding: 14px 40px 12px;
+  font-family: "FS Alvar";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 110%;
+  color: #ffffff;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.dolneMenu {
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 16px;
+  width: 100%;
+}
+
+.divPierwszy {
+  display: flex;
+  align-items: center;
+  color: #cb3de3;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 0px 8px 0;
+  /*  transition: all .3s; */
+}
+
+.strz2 {
+  display: flex;
+  margin: 8px 0px 8px 8px;
+}
+
+.strzalka {
+  /* border: 2px solid green; */
+  display: flex;
+  position: absolute;
+  bottom: 32px;
+  margin-right: 23px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.strzalka2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  top: 8px;
+  margin-left: auto;
+}
+
+.kolo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  color: black;
+}
+
+.kolo:before {
+  content: "";
+  border-top: 2px solid white;
+  border-color: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  right: 6px;
+}
+
+.kolo:after {
+  content: "";
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-color: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: 26%;
+  width: 6px;
+  height: 6px;
+}
+
+.text-box-srodek {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  /* margin: 14px 100px; */
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  align-content: stretch;
+  align-items: center;
+}
+
+.double-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.double-item-wrapper .text-box-center {
+  text-align: center;
+}
+
+.text-box-center {
+  text-align: -webkit-center;
+  margin: 14px 100px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content: stretch;
+  align-items: center;
+}
+
+.page-boxes-outer {
+  position: relative;
+}
+
+.page-boxes-inner {
+  position: relative;
+  pointer-events: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.center-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .double-item-container {
@@ -24,6 +281,10 @@ body {
   overflow: hidden;
   background-image: url();
   display: flex;
+}
+
+.page-boxes-outer {
+  position: relative;
 }
 
 .double-item-container-text {
@@ -36,6 +297,40 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
+}
+
+.page-boxes-inner {
+  position: absolute;
+}
+
+.double-item-container .right-image {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.responsive-bg {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.plans-item-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-box-plans {
+  display: flex;
+  margin: 0 24px 0 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 25px;
+  color: White;
 }
 
 ._btn {
@@ -56,30 +351,200 @@ body {
   transition: all 0.3s;
 }
 
+.plans-item-wrapper .right-image {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.bottom-buttons-wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 24px;
+  width: 100%;
+}
+
+.double-bottom-buttons-third {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.circle-arrow {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  top: 8px;
+}
+
+.circle-arrow:before {
+  content: "";
+  border-top: 2px solid white;
+  border-color: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  right: 6px;
+}
+
+.circle-arrow:after {
+  content: "";
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-color: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-color: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: 30%;
+  width: 6px;
+  height: 6px;
+}
+
+.box-shadow-inset {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  position: absolute;
+}
+
+.one-full-item-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.background-shadow {
+  position: absolute;
+  width: calc(100% - 8px);
+  height: 312px;
+  top: 0;
+}
+
+.page-boxes-inner {
+  position: relative;
+  pointer-events: none;
+}
+
+.appButtons {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
 @media screen and (min-width: 1201px) {
+  .appButtons a > img {
+    width: 160px;
+  }
+  .one-full-item-wrapper .text-box-center {
+    margin: 14px 260px;
+    text-align: center;
+  }
   .double-item-container {
     height: 602px;
+  }
+  .double-item-container .right-image {
+    width: 50%;
+  }
+
+  .double-item-container-text h6 {
+    width: 80%;
   }
   .responsive-bg {
     background-image: var(--xl-size);
   }
+  .text-box-plans {
+    max-width: 60%;
+  }
+  .plans-item-wrapper {
+    height: 536px;
+  }
+  .double-item-wrapper {
+    height: 536px;
+  }
+
+  .text-box-center {
+    margin: 14px 100px;
+  }
+  .one-full-item-wrapper {
+    height: 602px;
+  }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  .double-item-container-text {
-    margin-left: 24px;
-    margin-right: 24px;
+  .appButtons a > img {
+    width: 135px;
   }
-
   .double-item-container {
     height: 576px;
   }
   .responsive-bg {
     background-image: var(--xl-size);
   }
+
+  .double-item-container-text {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .plans-item-wrapper {
+    height: 520px;
+  }
+
+  .double-bottom-buttons-third {
+    margin-bottom: 16px;
+  }
+  .double-item-wrapper {
+    height: 520px;
+  }
+
+  .text-box-center {
+    margin: 14px 60px;
+  }
+
+  .one-full-item-wrapper {
+    height: 576px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  .appButtons a > img {
+    width: 150px;
+  }
+
+  .double-item-container {
+    height: 620px;
+    justify-content: space-between;
+    background-size: cover;
+    display: flex;
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .responsive-bg {
+    background-image: var(--l-size);
+  }
+
   .double-item-container-text {
     gap: 6px;
     padding-top: 24px;
@@ -88,37 +553,113 @@ body {
     justify-content: flex-end;
   }
 
-  .double-item-container {
-    height: 620px;
+  .plans-item-wrapper {
+    display: flex;
+    justify-content: space-between t;
+    align-items: stretch;
+    flex-direction: row;
+    height: 520px;
   }
-  .responsive-bg {
-    background-image: var(--l-size);
+
+  .double-item-wrapper {
+    height: 520px;
+  }
+
+  .text-box-center {
+    margin: 14px 60px;
+  }
+
+  .one-full-item-wrapper {
+    height: 520px;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+  .appButtons a > img {
+    width: 150px;
+  }
+  .one-full-item-wrapper {
+    height: 520px;
+  }
+
+  .double-item-container {
+    height: 685px;
+    justify-content: space-between;
+    background-size: cover;
+    display: flex;
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .responsive-bg {
+    background-image: var(--m-size);
+  }
+
   .double-item-container-text {
     gap: 6px;
     justify-content: flex-end;
     width: unset;
   }
 
-  .double-item-container {
-    height: 685px;
+  .text-box-plans {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center !important;
+    /* text-align: center; */
   }
-  .responsive-bg {
-    background-image: var(--m-size);
+
+  .plans-item-wrapper {
+    height: 520px;
+    align-items: center;
+  }
+
+  .plans-item-wrapper .right-image {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+  }
+
+  .double-bottom-buttons-third {
+    display: none;
+  }
+  .dolneMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .dolneMenu .strzalka2 {
+    display: none;
+  }
+
+  .double-item-wrapper {
+    height: 520px;
+  }
+
+  .text-box-center {
+    margin: 14px 60px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .double-item-container-text {
-    justify-content: flex-end;
-    width: unset;
+  .appButtons a > img {
+    width: 140px;
   }
-
+  .one-full-item-wrapper {
+    height: 520px;
+  }
   .double-item-container {
     height: 695px;
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
   .responsive-bg {
     background-image: var(--s-size);
@@ -138,10 +679,33 @@ body {
     align-items: center !important;
     text-align: center;
   }
+
+  .double-item-wrapper {
+    height: 520px;
+  }
+
+  .text-box-center {
+    margin: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .strzalka {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  .appButtons a > img {
+    width: 110px;
+  }
   .responsive-bg {
     background-image: var(--xs-size);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .text-box-center h2 {
+    font-size: 28px;
   }
 }
